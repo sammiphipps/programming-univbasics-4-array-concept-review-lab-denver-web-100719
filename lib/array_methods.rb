@@ -10,24 +10,34 @@ end
 
 def find_max_value(array)
   #counter = 1; 
- # maxvalue = array[0];
+ maxvalue = array[0];
  # while counter < array.length do 
  #   if array[counter] > maxvalue
-      maxvalue = array[counter]
+  #    maxvalue = array[counter]
+ #   end 
+#    counter += 1
+#  end 
+  array.length.times do |index|
+    if array[index] > maxvalue
+      maxvalue = array[index]
     end 
-    counter += 1
   end 
   return maxvalue
 end
 
 def find_min_value(array)
-  counter = 1; 
+  #counter = 1; 
   minvalue = array[0]
-  while counter < array.length do
-    if array[counter] < minvalue
-      minvalue = array[counter]
+  #while counter < array.length do
+  #  if array[counter] < minvalue
+  #    minvalue = array[counter]
+  #  end 
+  #  counter += 1
+ # end
+  array.length.times do |index|
+    if array[index] < minvalue
+      minvalue = array[index]
     end 
-    counter += 1
-  end
+  end 
   return minvalue
 end
